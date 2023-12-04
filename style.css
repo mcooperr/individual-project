@@ -1,0 +1,90 @@
+body {
+    text-align: left; 
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #F6E6D9;
+    color: #3C422E;
+    font-family:'GT Alpina Typewriter','monospace';
+    font-size: 1.5em;
+}
+a, a:visited {
+    text-decoration: none;
+    color: #3C422E;
+}
+.nav_menu {
+    background:#F6E6D9;
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    list-style-type: none;
+    padding: 20px;
+    box-sizing: border-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: 999;
+    margin-top: 0;
+}
+.nav_menu li {
+    font-family: 'ITC Garamond Condensed','serif';
+    margin-right: 40px;
+}
+main {
+    margin-top: 120px;
+}
+.skip a{
+    background: #ffffff;
+    left: 0;
+    padding: 6px;
+    position: absolute; 
+    top: -50px;
+    left: 10px;
+}
+.skip a:focus {
+    top: 20px;
+}
+*:focus {
+    border: solid 2px #ffffff;
+}
+#current {
+    text-decoration: underline;
+}
+img {
+    width: 25%;
+    border-radius: 15px;
+    filter: grayscale(100%);
+    transition: transform 0.3s ease;
+}
+img:hover {
+    filter: grayscale(0%);
+}
+.book-left {
+    display: flex;
+    align-items:flex-start;
+}
+.book-left .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.book-left img {
+    margin-right: 50px;
+}
+.book-right {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+.book-right .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.book-right img {
+    margin-left: 50px;
+}
