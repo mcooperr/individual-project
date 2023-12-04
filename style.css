@@ -158,7 +158,40 @@ main {
     transform: translateX(-50%);
     bottom: 0;
     box-sizing: border-box;
-    padding:5px
+    padding:5px;
   }
-  
+@media (prefers-reduced-motion: reduce) {
+    .library img:hover {
+    filter: grayscale(100%);
+    transform: none;
+    transition: none;
+    }
+}
 
+/* Mobile view */
+@media (min-width: 480px) {
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+        font-size: 1.2em;
+    }
+    .footer {
+        display: none;
+    }
+    .library img {
+        filter: grayscale(0%);
+        transform: none;
+        transition: none;
+        align-self: center;
+    }
+}
+
+/* Tablet view */
+@media screen and (min-width: 800px) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1.3em;
+    }
+}
