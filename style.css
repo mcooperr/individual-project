@@ -176,15 +176,6 @@ main {
         margin-bottom: 5%;
         font-size: 1.2em;
     }
-    .footer {
-        display: none;
-    }
-    .library img {
-        filter: grayscale(0%);
-        transform: none;
-        transition: none;
-        align-self: center;
-    }
 }
 
 /* Tablet view */
